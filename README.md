@@ -1,10 +1,14 @@
 <div align="center">
 
+[🇬🇧 English](README.md) · [🇪🇸 Español](README.es.md)
+
+</div>
+
+<div align="center">
+
 # ✨ repo-glow
 
 **How shiny is your repo? Get a Glow Score (0–100) in one command.**
-
-*¿Qué tan brillante es tu repo? Obtén un Glow Score (0–100) en un solo comando.*
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue?style=flat-square&logo=python&logoColor=white)
 ![Dependencies](https://img.shields.io/badge/dependencies-0-00A884?style=flat-square)
@@ -21,11 +25,7 @@ Your code may be great, but nobody will ever know if the repo looks abandoned. R
 
 `repo-glow` audits 14 signals — README depth, license, CI, tests, packaging, community files — and gives you a **Glow Score from 0 to 100**, with the exact fixes to raise it.
 
-Tu código puede ser excelente, pero nadie lo notará si el repo parece abandonado. Reclutadores, desarrolladores y **agentes de IA** (sí, los LLMs que rastrean GitHub también juzgan tu repo por su presentación) deciden en segundos.
-
-`repo-glow` audita 14 señales — profundidad del README, licencia, CI, tests, packaging, archivos de comunidad — y te da un **Glow Score de 0 a 100**, con las correcciones exactas para subirlo.
-
-## 📊 The score / El puntaje
+## 📊 The score
 
 | Range | Grade | Meaning |
 |-------|-------|---------|
@@ -34,7 +34,7 @@ Tu código puede ser excelente, pero nadie lo notará si el repo parece abandona
 | 50–69 | 💡 Getting there | Good code, weak presentation. |
 | 0–49 | 🌑 Dark mode | Invisible to the world. |
 
-## ⚡ Quickstart / Inicio rápido
+## ⚡ Quickstart
 
 ```bash
 git clone https://github.com/fernedy/repo-glow.git
@@ -84,7 +84,7 @@ python repo_glow.py fix . --ai   # + asks your local agent (opencode) for a repo
 
 The AI mode is **optional and local**: if you have [OpenCode](https://opencode.ai) (or any agent CLI) installed, repo-glow suggests a one-line description for your `gh repo edit --description`. No API keys, no cloud calls, no data leaves your machine.
 
-## ✅ Tested / Probado
+## ✅ Tested
 
 ```bash
 python -m unittest discover -v
@@ -92,11 +92,11 @@ python -m unittest discover -v
 
 CI runs the suite on every push (see [`.github/workflows/ci.yml`](.github/workflows/ci.yml)).
 
-## 🤝 Contributing / Contribuir
+## 🤝 Contributing
 
 Ideas welcome: more checks (topics, badges hygiene, commit messages), `--json` output, a pre-commit hook, a GitHub Action that comments the score on PRs. See [CONTRIBUTING.md](CONTRIBUTING.md). Dogfooding rule: **PRs must not lower the Glow Score of this repo.**
 
-## 📜 License / Licencia
+## 📜 License
 
 MIT — see [LICENSE](LICENSE).
 
